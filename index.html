@@ -3,74 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peram Ranjith - Portfolio</title>
+    <title>My Simple Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Peram Ranjith </br>
+     Front End Developer </h1>
+ <img src="https://media.licdn.com/dms/image/D5603AQGI-9zvsixxfQ/profile-displayphoto-shrink_400_400/0/1708609428369?e=1728518400&v=beta&t=jENQCVievBu9QRz9jHjnNMyYDx_4hTAFONKl9Sosoco" alt="my pic" style="width:200px;height:200px;>
+              
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+<img src="C:\Users\peram\OneDrive\Desktop\web dev" >
+            </nav>
+        </div>
     </header>
-
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <h1>Peram Ranjith</h1>
-        <p>Master's Student | Software Engineer | Web Developer</p>
-        <p>Innovative solutions for complex problems, powered by technology.</p>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am currently pursuing a Master's in Computer Science at UNT, expected to graduate in Spring 2025. With experience at Capgemini as a Software Engineer, I specialize in web development, data analytics, and problem-solving.</p>
-        <p>Education: B.Tech in Computer Science, Master's in Computer Science (in progress).</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Subaru Frontend Development</h3>
-            <p>Developed a responsive, user-friendly frontend using React and CSS.</p>
-        </div>
-        <div class="project">
-            <h3>MIT-BIH Data Analytics</h3>
-            <p>Preprocessed and analyzed ECG data to generate predictive insights using ML techniques.</p>
-        </div>
-        <div class="project">
-            <h3>Huffman Coding Tree Implementation</h3>
-            <p>Built a Huffman Tree in Python, optimized for efficient encoding and decoding.</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming: Python, Java, JavaScript, SQL</li>
-            <li>Frameworks: React, Node.js</li>
-            <li>Other Tools: CSS, Google Colab</li>
-        </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:ranjithperam@my.unt.edu">ranjithperam@my.unt.edu</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/peram-ranjith-872aa820a/">linkedin.com/in/peram-ranjith-872aa820a/</a></p>
-        <p>GitHub: <a href="https://github.com/peramranji">github.com/peramranji</a></p>
-    </section>
-
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my profile! I am a passionate individual with experience in software engineering and library services. Currently, I am pursuing a Master's in Computer Science to further enhance my skills and knowledge.</p>
+        </section>
+        <section id="experience" class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Software Engineer at Capgemini</h3>
+                <p>February 2022 - July 2023</p>
+                <ul>
+                    <li>Developed websites using web technologies</li>
+                    <li>Performed requirement analysis, design, development, testing, deployment, and maintenance</li>
+                    <li>Collaborated with cross-functional teams</li>
+                    <li>Conducted code reviews and documentation</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Library Assistant</h3>
+                <p>Current</p>
+                <ul>
+                    <li>Assist patrons with printing and scanning</li>
+                    <li>Perform clerical tasks and maintain public areas</li>
+                    <li>Shelve and retrieve books from stacks</li>
+                </ul>
+            </div>
+<div class="experience-item">
+                <h3>Skills</h3>
+                <p></p>
+                <ul>
+                    <li>HTML, CSS, JS</li>
+                    <li>BOOT Strap,Node.js </li>
+                 
+                </ul>
+            </div>
+        </section>
+        <section id="education" class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Master's in Computer Science</h3>
+                <p>UNT Denton</p>
+            </div>
+        </section>
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Peram Ranjith. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 My Profile. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
