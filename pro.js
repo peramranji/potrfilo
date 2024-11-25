@@ -1,86 +1,29 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f9;
-}
+// Smooth Scrolling for Navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-}
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Section Styles */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-section h2 {
-    color: #333;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-section p {
-    font-size: 1.2rem;
-}
-
-/* Contact Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input, form textarea {
-    width: 300px;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+// Contact Form Validation & Feedback
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent default form submission
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    if (name && email && message) {
+        // Simulate a successful message submission
+        document.getElementById('form-feedback').innerHTML = `<p style="color:green;">Thank you, ${name}! Your message has been sent successfully.</p>`;
+        
+        // Clear the form fields
+        document.getElementById('contact-form').reset();
+    } else {
+        // Show error message if fields are missing
+        document.getElementById('form-feedback').innerHTML = `<p style="color:red;">Please fill in all fields.</p>`;
+    }
+});
