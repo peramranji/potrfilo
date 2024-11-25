@@ -3,90 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Peram Ranjith - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Peram Ranjith </br>
-     Front End Developer </h1>
- <img src="https://media.licdn.com/dms/image/D5603AQGI-9zvsixxfQ/profile-displayphoto-shrink_400_400/0/1708609428369?e=1728518400&v=beta&t=jENQCVievBu9QRz9jHjnNMyYDx_4hTAFONKl9Sosoco" alt="my pic" style="width:200px;height:200px;>
-              
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-<img src="C:\Users\peram\OneDrive\Desktop\web dev" >
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section id="about" class="container">
-            <h2>About Me</h2>
-            <p>Welcome to my profile! I am a passionate individual with experience in software engineering and library services. Currently, I am pursuing a Master's in Computer Science to further enhance my skills and knowledge.</p>
-        </section>
-        <section id="experience" class="container">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Software Engineer at Capgemini</h3>
-                <p>February 2022 - July 2023</p>
-                <ul>
-                    <li>Developed websites using web technologies</li>
-                    <li>Performed requirement analysis, design, development, testing, deployment, and maintenance</li>
-                    <li>Collaborated with cross-functional teams</li>
-                    <li>Conducted code reviews and documentation</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Library Assistant</h3>
-                <p>Current</p>
-                <ul>
-                    <li>Assist patrons with printing and scanning</li>
-                    <li>Perform clerical tasks and maintain public areas</li>
-                    <li>Shelve and retrieve books from stacks</li>
-                </ul>
-            </div>
-<div class="experience-item">
-                <h3>Skills</h3>
-                <p></p>
-                <ul>
-                    <li>HTML, CSS, JS</li>
-                    <li>BOOT Strap,Node.js </li>
-                 
-                </ul>
-            </div>
-        </section>
-        <section id="education" class="container">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Master's in Computer Science</h3>
-                <p>UNT Denton</p>
-            </div>
-        </section>
-        <section id="contact" class="container">
-            <h2>Contact</h2>
-            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+
+    <section id="home">
+        <h1>Hi, I'm Peram Ranjith</h1>
+        <p>Software Engineer | Web Developer | Data Analyst</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Master's student in Computer Science at UNT. I have experience as a Software Engineer at Capgemini and have a strong passion for web development and data analytics.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Subaru Frontend Project:</strong> Built using React and CSS.</li>
+            <li><strong>MIT-BIH Data Analytics:</strong> Data analysis with machine learning.</li>
+            <li><strong>Huffman Coding Tree:</strong> Implemented in Python.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="form-feedback"></div>
+    </section>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2024 My Profile. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Peram Ranjith</p>
+        <p>GitHub: <a href="https://github.com/peramranji" target="_blank">https://github.com/peramranji</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/peram-ranjith-872aa820a/" target="_blank">https://www.linkedin.com/in/peram-ranjith-872aa820a/</a></p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
