@@ -27,3 +27,29 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
         document.getElementById('form-feedback').innerHTML = `<p style="color:red;">Please fill in all fields.</p>`;
     }
 });
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const serviceID = 'YOUR_SERVICE_ID'; // Replace with your EmailJS service ID
+    const templateID = 'YOUR_TEMPLATE_ID'; // Replace with your EmailJS template ID
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const templateParams = {
+        name: name,
+        email: email,
+        message: message,
+    };
+
+    emailjs.send(serviceID, templateID, templateParams)
+        .then(() => {
+            document.getElementById('form-feedback').innerHTML = `<p style="color:green;">Thank you, ${name}! Your message has been sent successfully.</p>`;
+            document.getElementById('contact-form').reset();
+        }, (error) => {
+            document.getElementById('form-feedback').innerHTML = `<p style="color:red;">Oops! Something went wrong. Please try again later.</p>`;
+            console.error('EmailJS Error:', error);
+        });
+});
+
